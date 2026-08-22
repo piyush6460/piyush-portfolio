@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 19 19 21;
+    --foreground: 229 225 228;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-body font-inter antialiased overflow-x-hidden min-h-screen selection:bg-electric-violet/30 selection:text-text-heading;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sora text-text-heading;
+  }
+}
+
+/* Custom Utilities matching Stitch design */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.glass-card {
+  @apply bg-surface-container/50 border border-white/10 backdrop-blur-sm transition-all duration-300;
+}
+
+.glass-card-hover {
+  @apply hover:border-electric-violet/50 hover:shadow-[0_0_25px_rgba(99,102,241,0.15)];
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
