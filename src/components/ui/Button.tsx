@@ -7,6 +7,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   href?: string;
+  download?: boolean | string;
+  target?: string;
+  rel?: string;
   className?: string;
 }
 
@@ -17,6 +20,9 @@ export default function Button({
   icon,
   iconPosition = "right",
   href,
+  download,
+  target,
+  rel,
   className = "",
   ...props
 }: ButtonProps) {
@@ -44,7 +50,13 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={combinedClasses}>
+      <a
+        href={href}
+        download={download}
+        target={target}
+        rel={rel}
+        className={combinedClasses}
+      >
         {icon && iconPosition === "left" && icon}
         <span>{children}</span>
         {icon && iconPosition === "right" && icon}

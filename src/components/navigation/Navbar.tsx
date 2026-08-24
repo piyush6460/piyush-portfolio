@@ -100,7 +100,8 @@ export default function Navbar() {
         {/* Desktop Resume CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="/Piyush_Resume.md"
+            href="/Piyush_Resume.pdf"
+            download="Piyush_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[rgba(255,255,255,0.05)] text-text-heading border border-white/10 px-4 py-2 rounded-lg font-geist text-xs font-medium hover:bg-white/10 hover:border-electric-violet/50 hover:scale-105 transition-all duration-300 active:scale-95 flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric-violet"
@@ -157,7 +158,8 @@ export default function Navbar() {
               })}
               <div className="pt-2 border-t border-white/10 mt-2">
                 <a
-                  href="/Piyush_Resume.md"
+                  href="/Piyush_Resume.pdf"
+                  download="Piyush_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full bg-electric-violet/20 border border-electric-violet/40 text-text-heading px-4 py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 hover:bg-electric-violet/30 transition-colors"
