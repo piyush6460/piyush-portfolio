@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
   }
 
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
   body {
     @apply bg-background text-text-body font-inter antialiased overflow-x-hidden min-h-screen selection:bg-electric-violet/30 selection:text-text-heading;
   }

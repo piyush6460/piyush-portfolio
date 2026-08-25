@@ -20,7 +20,7 @@ export default function Home() {
       <Navbar />
 
       {/* Main Container */}
-      <main className="relative z-10 px-4 md:px-8 max-w-container-max mx-auto overflow-hidden">
+      <main className="relative z-10 px-4 md:px-8 max-w-container-max mx-auto overflow-x-clip">
         <Hero />
         <About />
         <Skills />
