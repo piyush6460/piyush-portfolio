@@ -8,7 +8,7 @@ export const personalDetails = {
   phone: "+91 6356630797",
   location: "Surat, Gujarat, India",
   summary:
-    "Full-stack developer with 2+ years of professional experience building web applications with React.js, Node.js, Express.js, and MongoDB, along with 1 year of hands-on UEFN and Verse development. Experienced in building features, integrating APIs, creating reusable UI components, and using AI-assisted development tools such as Antigravity and Claude Code to improve development speed, debugging, and code quality.",
+    "Full-stack developer with 3 years of professional experience building web applications using React.js, Node.js, Express.js, and MongoDB, along with hands-on experience in UEFN and Verse development. Experienced in building features, integrating APIs, creating reusable UI components, and using AI-assisted development tools such as Antigravity and Claude Code to improve development speed, debugging, and code quality.",
   yearsExperience: "2+ Years",
   uefnExperience: "1 Year",
   availability: "Available for new opportunities",
