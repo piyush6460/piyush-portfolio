@@ -7,7 +7,7 @@ import ScrollReveal from "../ui/ScrollReveal";
 export default function About() {
   const stats = [
     {
-      value: "2+",
+      value: "3",
       label: "YEARS EXPERIENCE",
     },
     {
